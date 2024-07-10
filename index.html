@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhamid Merghemi</title>
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --font-heading: 'Manrope', sans-serif;
+            --font-body: 'Manrope', sans-serif;
+            --background: hsl(240, 5%, 6%);
+            --foreground: hsl(60, 5%, 90%);
+            --primary: hsl(240, 0%, 90%);
+            --primary-foreground: hsl(60, 0%, 0%);
+            --secondary: hsl(240, 4%, 15%);
+            --secondary-foreground: hsl(60, 5%, 85%);
+            --accent: hsl(240, 0%, 13%);
+            --accent-foreground: hsl(60, 0%, 100%);
+            --destructive: hsl(0, 60%, 50%);
+            --destructive-foreground: hsl(0, 0%, 98%);
+            --muted: hsl(240, 5%, 25%);
+            --muted-foreground: hsl(60, 5%, 85%);
+            --card: hsl(240, 4%, 10%);
+            --card-foreground: hsl(60, 5%, 90%);
+            --popover: hsl(240, 5%, 15%);
+            --popover-foreground: hsl(60, 5%, 85%);
+            --border: hsl(240, 6%, 20%);
+            --input: hsl(240, 6%, 20%);
+            --ring: hsl(240, 5%, 90%);
+            --radius: 0.5rem;
+        }
+
+  /* Apply base styles */
+        * {
+            border: var(--border);
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--foreground);
+            font-family: 'Chivo', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+                font-family: 'Chivo', serif;
+        }
+
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary);
+            color: var(--primary-foreground);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-foreground);
+            color: var(--primary);
+        }
+
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+
+        .grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    </style>
+</head>
+<body>
+  <div class="flex flex-col min-h-[100dvh]">
+    <header class="px-4 lg:px-6 h-14 flex items-center">
+      <a class="flex items-center justify-center" href="#">
+        <img src="assets/logo.png" width="120" class="border-none" />
+        <span class="sr-only">Abdelhamid</span>
+      </a>
+      <nav class="ml-auto flex gap-4 sm:gap-6">
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#work">Work</a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#skills">Skills</a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#experience">Experience</a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-primary to-secondary">
+        <div class="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+          <div class="space-y-4">
+            <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary-foreground">Abdelhamid Merghemi</h1>
+            <h2 class="text-xl font-semibold text-primary-foreground">Flutter Mobile App Developer</h2>
+            <p class="max-w-[600px] text-primary-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              I'm a passionate Flutter developer with a focus on building high-quality, user-friendly mobile apps. With years of experience, I've honed my skills in creating visually stunning and highly performant applications.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <div class="container px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">My Work</h2>
+              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Check out some of the mobile apps I've developed using Flutter.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+            <a
+              class="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+              href="med-selera.html"
+            >
+              <img
+                src="assets/med_selera_thumbnail.png"
+                width="300"
+                height="200"
+                alt="Fitness Tracker"
+                class="aspect-video overflow-hidden rounded-lg object-cover object-center"
+              />
+              <div class="text-sm font-medium leading-none group-hover:underline">E-learning App Med SELERA</div>
+              <div class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                A medical e-learning app built with Flutter, tailored for medical students preparing for the Residanat exam.
+              </div>
+            </a>
+            <a
+              class="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+              href="bazaar.html"
+            >
+              <img
+                src="assets/bazaar_thumbnail.png"
+                width="300"
+                height="200"
+                alt="Expense Tracker"
+                class="aspect-video overflow-hidden rounded-lg object-cover object-center"
+              />
+              <div class="text-sm font-medium leading-none group-hover:underline">E-commerce App Bazaar</div>
+              <div class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                A versatile e-commerce platform built with Flutter, designed to serve clients, admins, and sellers seamlessly.
+              </div>
+            </a>
+            <a
+              class="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+              href="zorha.html"
+            >
+              <img
+                src="assets/zorha_thumbnail.png"
+                width="300"
+                height="200"
+                alt="News Reader"
+                class="aspect-video overflow-hidden rounded-lg object-cover object-center"
+              />
+              <div class="text-sm font-medium leading-none group-hover:underline">Travel App Zorha</div>
+              <div class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                A modern travel app built with Flutter, featuring a clean and intuitive UI.
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="w-full py-12 md:py-24 lg:py-32">
+        <div class="container px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">My Skills</h2>
+              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Here are some of the technologies and tools I'm proficient in.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-4 lg:gap-12">
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/flutter.png" alt="" width="40" height="40" class="border-none">
+              <div class="text-lg font-semibold text-primary">Flutter</div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/laravel.png" alt="" width="40" height="40" class="border-none">
+              <div class="text-lg font-semibold text-primary">Laravel</div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/nodejs.png" alt="" width="80"  class="border-none">
+              <div class="text-lg font-semibold text-primary">Node js</div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/firebase.png" alt="" width="40" height="40" class="border-none">
+              <div class="text-lg font-semibold text-primary">Firebase</div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/git.png" alt="" width="40" height="40" class="border-none">
+              <div class="text-lg font-semibold text-primary">Git</div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/figma.png" alt="" width="40" height="40" class="border-none">
+              <div class="text-lg font-semibold text-primary">Figma</div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/android_studio.png" alt="" width="40" height="40" class="border-none">
+              <div class="text-lg font-semibold text-primary">Android Studio</div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-2">
+              <img src="assets/vs_code.png" alt="" width="40" height="40" class="border-none">
+              <div class="text-lg font-semibold text-primary">VS Code</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <div class="container px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">My Experience</h2>
+              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Check out my work history and the projects I've been involved in.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+            <div class="space-y-4">
+              <div class="grid gap-1">
+                <h3 class="text-xl font-bold text-primary">Flutter Developer</h3>
+                <p class="text-muted-foreground">Freelancer. | 2023 - Present</p>
+                <p class="text-muted-foreground">
+                  Developed and maintained high-performance mobile apps using Flutter, Dart, Firebase, Laravel and Node JS.
+                </p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="grid gap-1">
+                <h3 class="text-xl font-bold text-primary">Flutter Developer</h3>
+                <p class="text-muted-foreground">Startup Med SELERA | 2023 - Present</p>
+                <p class="text-muted-foreground">
+                  Played a key role in the development and launch of a popular e-learning medical app using Flutter. Responsible for implementing new features and optimizing app performance.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="w-full py-12 md:py-24 lg:py-32 border-t">
+        <div class="container px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">Get in Touch</h2>
+              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                I'm always excited to discuss new projects and opportunities. Feel free to reach out to me.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 min-[400px]:flex-row">
+              <a href="mailto:abdelhamidmerghemi@gmail.com" class="inline-flex items-center justify-center h-10 px-8 text-sm font-medium text-black bg-white rounded-md shadow transition-colors border border-solid border-white hover:bg-transparent hover:text-white hover:border-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">Email Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <p class="text-xs text-muted-foreground">© 2024 Abdelhamid Merghemi. All rights reserved.</p>
+      <nav></nav>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
